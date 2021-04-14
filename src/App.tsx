@@ -1,5 +1,13 @@
+import { Provider } from "react-redux";
+import Catalog from "./components/Catalog";
+import store from "./store";
+
 function App() {
-  return <div>Hello World!</div>;
+  return (
+    <Provider store={store}>
+      <Catalog />
+    </Provider>
+  );
 }
 
 export default App;
